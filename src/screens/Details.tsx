@@ -41,8 +41,6 @@ export function Details() {
         bgColor: 'red.500'
       });
     } finally {
-      console.log(pollDetails);
-
       setIsLoading(false);
     }
   }
