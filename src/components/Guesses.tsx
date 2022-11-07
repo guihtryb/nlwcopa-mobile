@@ -45,6 +45,7 @@ export function Guesses({ pollId , code }: Props) {
     try {
       setIsLoading(true);
       if (!firstTeamPoints.trim() || !secondTeamPoints.trim()) {
+        setIsLoading(false);
         return toast.show({
           title: 'Informe o placar do palpite',
           placement: 'top',
